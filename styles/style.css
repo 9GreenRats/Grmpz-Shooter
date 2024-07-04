@@ -13,7 +13,6 @@ body {
 canvas {
     display: block;
     margin: 0 auto; /* Center the canvas */
-    border: 2px solid #fff;
 }
 
 .scoreboard {
@@ -23,6 +22,7 @@ canvas {
     font-size: 2rem;
     color: #fff;
 }
+
 .deathboard {
     position: absolute;
     top: 60px; /* Adjusted to appear below the scoreboard */
@@ -30,6 +30,7 @@ canvas {
     font-size: 2rem;
     color: #fff;
 }
+
 .grmpz-message {
     position: absolute;
     top: 50%;
@@ -86,7 +87,6 @@ canvas {
 .how-to-play p {
     margin: 5px 0 0 0;
 }
-
 @media only screen and (max-width: 600px) {
     body {
         justify-content: flex-start; /* Adjust alignment for small screens */
@@ -128,3 +128,4 @@ canvas {
         font-size: 1.2rem;
     }
 }
+
