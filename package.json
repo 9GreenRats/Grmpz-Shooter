@@ -2,9 +2,9 @@
   "name": "grmpz",
   "version": "1.0.0",
   "description": "Grmpz Shooter is an interactive infinite shooter game by 9GreenRats",
-  "main": "script.js", 
+  "main": "script.js",
   "scripts": {
-    "test": "echo 'No automated tests specified for interactive game.'"
+    "test": "echo 'No automated tests specified for interactive game.'",
     "build": "webpack --config webpack.prod.config.js"
   },
   "repository": {
