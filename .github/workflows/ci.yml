@@ -30,9 +30,12 @@ jobs:
     - name: Build project
       run: npm run build
 
-    - name: Deploy to Vercel
-      env:
-        VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-      run: |
-        npm install -g vercel
-        vercel --prod --token ${{ secrets.VERCEL_TOKEN }}
+    - name: Deploy to Hostinger
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      with:
+        server: ${{ secrets.HOSTINGER_SERVER }}
+        username: ${{ secrets.HOSTINGER_USERNAME }}
+        password: ${{ secrets.HOSTINGER_PASSWORD }}
+        port: ${{ secrets.HOSTINGER_PORT }}  # Optional, if using a non-default FTP port
+        local-dir: build  # Adjust based on your build output directory
+        remote-dir: /public_html/play  # Adjust based on your Hostinger setup
