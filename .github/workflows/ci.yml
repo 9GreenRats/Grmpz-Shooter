@@ -34,5 +34,4 @@ jobs:
         username: ${{ secrets.HOSTINGER_USERNAME }}
         password: ${{ secrets.HOSTINGER_PASSWORD }}
         port: ${{ secrets.HOSTINGER_PORT }}  # Optional, if using a non-default FTP port
-        local-dir: build  # Adjust based on your build output directory
         remote-dir: /public_html/play  # Adjust based on your Hostinger setup
