@@ -5,6 +5,7 @@
   "main": "script.js", 
   "scripts": {
     "test": "echo 'No automated tests specified for interactive game.'"
+    "build": "webpack --config webpack.prod.config.js"
   },
   "repository": {
     "type": "git",
