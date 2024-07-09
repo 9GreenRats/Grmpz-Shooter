@@ -1,17 +1,20 @@
 {
   "name": "grmpz",
   "version": "1.0.0",
-  "description": "Grmpz Shooter is an interactive infinite shooter game by 9greenrats",
-  "main": "script.js",
+  "description": "Grmpz Shooter is an interactive infinite shooter game by 9GreenRats",
+  "main": "script.js", 
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo 'No automated tests specified for interactive game.'"
+    
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/9blast/Grmpz-Shooter.git"
   },
   "keywords": [
-    "grmpz"
+    "grmpz",
+    "game",
+    "shooter"
   ],
   "author": "9GreenRats",
   "license": "ISC",
