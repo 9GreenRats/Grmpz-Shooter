@@ -1,8 +1,4 @@
-//by 9GreenRats, 2024, with vibes, inshallay and love
-//redirect on mobile screens
-if (window.innerWidth < 600) {
-    window.location.href = 'https://opensea.io/collection/grmpz-by-9greenrats/overview';
-}
+// by 9GreenRats, 2024, with vibes, inshallah and love
 
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
@@ -281,7 +277,6 @@ function loadDeaths() {
         updateDeaths();
     }
 }
-
 
 // Function for Matrix BG
 const letters = Array(256).join('grmpz').split('');
