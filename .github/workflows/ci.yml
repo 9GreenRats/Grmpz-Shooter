@@ -27,11 +27,11 @@ jobs:
     - name: Run tests
       run: npm test
 
-    - name: Deploy to Hostinger
+    - name: Deploy to FTP
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        server: ${{ secrets.HOSTINGER_SERVER }}
-        username: ${{ secrets.HOSTINGER_USERNAME }}
-        password: ${{ secrets.HOSTINGER_PASSWORD }}
-        port: ${{ secrets.HOSTINGER_PORT }}  # Optional, if using a non-default FTP port
-        remote-dir: /public_html/play  # Adjust based on your Hostinger setup
+        server: ${{ secrets.FTP_HOSTNAME }}  
+        username: ${{ secrets.FTP_USERNAME }}  
+        password: ${{ secrets.FTP_PASSWORD }}  
+        port: 21  
+        server-dir: /home/u745634030/domains/grmpz.xyz/public_html  
