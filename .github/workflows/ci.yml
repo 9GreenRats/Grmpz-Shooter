@@ -28,3 +28,12 @@ jobs:
       run: npm test
 
     
+
+    - name: Deploy to FTP
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      with:
+        server: ${{ secrets.FTP_HOSTNAME }}  
+        username: ${{ secrets.FTP_USERNAME }}  
+        password: ${{ secrets.FTP_PASSWORD }}  
+        port: 21  
+        server-dir: /
